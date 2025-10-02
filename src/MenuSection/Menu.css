@@ -1,0 +1,127 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.MenuOuter {
+    height: 100vh;
+    background: linear-gradient(to top, #000000, #434343);
+    position: relative;
+
+}
+
+.MenuOuter>.MenuleftLeaf,
+.MenurightLeaf {
+    position: absolute;
+    overflow: hidden;
+
+
+}
+
+.MenuOuter>.MenuleftLeaf {
+    left: 0%;
+    bottom:5%;
+
+}
+
+.MenuOuter>.MenurightLeaf {
+    bottom: 5%;
+    right: 0%;
+}
+
+.MenuOuter>.MenuInner {
+    padding: 10% 2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+
+.MenuOuter>.MenuInner>.MostPopular {
+    width: 350px;
+    padding-left: 30px;
+}
+
+.MenuOuter>.MenuInner>.MostPopular>h3,
+.MostLoved>h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* ! cocktailLists */
+.MenuOuter>.MenuInner>.MostPopular>.cocktailLists {
+    padding: 10% 0%;
+}
+
+.MenuOuter>.MenuInner>.MostPopular>.cocktailLists>.cocktail>.cocktailName {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10%;
+}
+
+.MenuOuter>.MenuInner>.MostPopular>.cocktailLists>.cocktail>.cocktailName>h3 {
+    color: #E7D393;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.MenuOuter>.MenuInner>.MostPopular>.cocktailLists>.cocktail>.cocktailName>p {
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+
+}
+
+.MenuOuter>.MenuInner>.MostPopular>.cocktailLists>.cocktail {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.MenuOuter>.MenuInner>.MostPopular>.cocktailLists>.cocktail>.cocktailPrice>p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/* ! Most Loved */
+.MostLoved {
+    width: 350px;
+}
+
+.MostLoved>.mocktailsList {
+    padding: 10% 0%;
+}
+
+.MostLoved>.mocktailsList .mocktails {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.MostLoved>.mocktailsList .mocktails>.mocktailsName {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10%;
+}
+
+.MostLoved>.mocktailsList .mocktails>.mocktailsName>h3 {
+    color: #E7D393;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.MostLoved>.mocktailsList .mocktails>.mocktailsName>p {
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.MostLoved>.mocktailsList .mocktails>.mocktailsPrice>p {
+    font-family: sans-serif;
+}

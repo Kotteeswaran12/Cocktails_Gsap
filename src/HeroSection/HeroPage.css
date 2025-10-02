@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'ModernNegra';
+  src: url('../assets/fonts/ModernNegraDemo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --text: #ffff;
+  --bg: #000000;
+}
+
+* {
+  color: var(--text);
+  font-family: 'ModernNegra';
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* HeroInner > HeroInnermost > h1 */
+.HeroInner {
+  position: relative;
+}
+
+.HeroInner>.HeroInnermost {
+  background: linear-gradient(to bottom, #000000, #434343);
+  height: 88vh
+    /* 100vh/200 )*/
+  ;
+  text-align: center;
+
+
+
+
+}
+
+/* ! Heading Larger */
+.HeroInner>.HeroInnermost>h1 {
+  background: linear-gradient(to bottom, #FFFFFF, #898989 , #898989);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15rem;
+  margin-top: 5%;
+}
+
+.HeroInner>.HeroInnermost>.rightBottom {
+  position: absolute;
+  width: 300px;
+  bottom: 5%;
+  right: 3%;
+  font-size: 1.2rem;
+}
+
+.HeroInner>.HeroInnermost>.leftBottom {
+  position: absolute;
+  width: 300px;
+  bottom: 5%;
+  left: 3%;
+  width: 400px;
+
+
+}
+
+.HeroInner>.HeroInnermost>.leftBottom>p {
+  font-size: 1.3rem;
+}
+
+.HeroInner>.HeroInnermost>.leftBottom>h3 {
+  /* background-color: red; */
+  color: orange;
+  font-size: 2rem;
+}
+
+/*! leftCenterLeaf , rightCenterLeaf */
+
+
+.HeroInner>.HeroInnermost>.leftCenterLeaf {
+  position: absolute;
+  overflow: hidden;
+  top: 30%;
+}
+
+.HeroInner>.HeroInnermost>.rightCenterLeaf {
+  position: absolute;
+  right: 0;
+  top: -2%;
+  overflow: hidden;
+
+}
+
+
+/* ! Scroll down */
+.HeroInner>.HeroInnermost>.scrollDown {
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
