@@ -140,7 +140,6 @@ const Menu = () => {
                     <img src={RightLeaf} alt="" className='right'/>
                 </div>
             </div>
-            <About />
         </div>
     );
 }
