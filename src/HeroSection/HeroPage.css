@@ -21,12 +21,16 @@
 /* HeroInner > HeroInnermost > h1 */
 .HeroInner {
   position: relative;
+
 }
 
 .HeroInner>.HeroInnermost {
-  background: linear-gradient(to bottom, #000000, #434343);
-  height: 88vh
-    /* 100vh/200 )*/
+  /* background: linear-gradient(to bottom, #000000, #434343); */
+
+  background-image: url("../assets/images/noise.png");
+  height: 88vh;
+  padding-top: 100px;
+
   ;
   text-align: center;
 
@@ -37,9 +41,10 @@
 
 /* ! Heading Larger */
 .HeroInner>.HeroInnermost>h1 {
-  background: linear-gradient(to bottom, #FFFFFF, #898989 , #898989);
+  color: transparent;
+  background: linear-gradient(to bottom, #FFFFFF, #898989);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-size: 15rem;
   margin-top: 5%;
 }
@@ -50,20 +55,41 @@
   bottom: 5%;
   right: 3%;
   font-size: 1.2rem;
+  text-align: start;
+
+}
+
+.HeroInner>.HeroInnermost>.rightBottom {
+  p {
+    margin-bottom: 10px;
+  }
+
+  .view {
+    cursor: pointer;
+    font-size: 1.4rem;
+
+  }
+
+  .view:hover {
+    opacity: 0.6;
+
+  }
 }
 
 .HeroInner>.HeroInnermost>.leftBottom {
   position: absolute;
-  width: 300px;
+  width: 100px;
   bottom: 5%;
   left: 3%;
   width: 400px;
+  /* background-color: red; */
 
 
 }
 
 .HeroInner>.HeroInnermost>.leftBottom>p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .HeroInner>.HeroInnermost>.leftBottom>h3 {
@@ -77,15 +103,15 @@
 
 .HeroInner>.HeroInnermost>.leftCenterLeaf {
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 30%;
 }
 
 .HeroInner>.HeroInnermost>.rightCenterLeaf {
   position: absolute;
   right: 0;
-  top: -2%;
-  overflow: hidden;
+  top: 5%;
+  /* overflow: hidden; */
 
 }
 
@@ -94,5 +120,96 @@
 .HeroInner>.HeroInnermost>.scrollDown {
   position: absolute;
   right: 5%;
-  top: 40%;
+  top: 50%;
 }
+
+Video {
+  width: 100%;
+  /* w-full */
+  height: 50%;
+  /* h-1/2 */
+  position: absolute;
+  /* absolute */
+  bottom: 0;
+  /* bottom-0 */
+  left: 0%;
+  /* left-0 */
+  object-position: bottom;
+  /* object-bottom */
+  object-fit: cover;
+  /* object-cover */
+  z-index: -1;
+}
+
+/* md breakpoint (≥768px) */
+@media (min-width: 768px) {
+  video {
+    height: 80%;
+    /* md:h-[80%] */
+    object-fit: contain;
+    /* md:object-contain */
+  }
+}
+
+@media (max-width:800px) {
+  .HeroInner>.HeroInnermost>.leftBottom {
+    display: none;
+
+  }
+
+  .HeroInner>.HeroInnermost {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .HeroInner>.HeroInnermost>.rightBottom {
+    position: static;
+    width: 500px;
+    text-align: center;
+
+
+  }
+
+  .HeroInner>.HeroInnermost>.leftCenterLeaf {
+    position: absolute;
+    /* overflow: hidden; */
+    top: 65%;
+    left: 0%;
+  }
+
+  .HeroInner>.HeroInnermost>.rightCenterLeaf {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    /* overflow: hidden; */
+
+  }
+
+  .HeroInner>.HeroInnermost>.scrollDown {
+    position: absolute;
+    right: 5%;
+    top: 60%;
+  }
+
+  .HeroInner>.HeroInnermost>h1 {
+
+    font-size: 10rem;
+    margin-top: 10%;
+  }
+
+
+}
+
+@media (max-width:513px) {
+  .HeroInner>.HeroInnermost>h1 {
+
+    font-size: 7rem;
+
+  }
+   .HeroInner>.HeroInnermost>.rightBottom{
+    width: 300px;
+   }
+}
+

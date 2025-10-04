@@ -2,12 +2,13 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .MenuOuter {
     height: 100vh;
-    background: linear-gradient(to top, #000000, #434343);
+
+    background-image: url("../assets/images/noise.png");
     position: relative;
 
 }
@@ -15,6 +16,7 @@
 .MenuOuter>.MenuleftLeaf,
 .MenurightLeaf {
     position: absolute;
+    max-width: fit-content;
     overflow: hidden;
 
 
@@ -22,27 +24,34 @@
 
 .MenuOuter>.MenuleftLeaf {
     left: 0%;
-    bottom:5%;
-
+    bottom: 0%;
+    overflow: hidden;
 }
 
 .MenuOuter>.MenurightLeaf {
-    bottom: 5%;
+    bottom: 0%;
     right: 0%;
+    overflow: hidden;
 }
 
 .MenuOuter>.MenuInner {
+    overflow: hidden;
     padding: 10% 2%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    /* allow wrap on smaller screens */
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    overflow-y: hidden;
+    /* better than space-between for wrap */
+    text-align: left;
 }
 
 .MenuOuter>.MenuInner>.MostPopular {
     width: 350px;
     padding-left: 30px;
+
 }
 
 .MenuOuter>.MenuInner>.MostPopular>h3,
@@ -54,6 +63,7 @@
 /* ! cocktailLists */
 .MenuOuter>.MenuInner>.MostPopular>.cocktailLists {
     padding: 10% 0%;
+    overflow: hidden;
 }
 
 .MenuOuter>.MenuInner>.MostPopular>.cocktailLists>.cocktail>.cocktailName {
@@ -91,16 +101,19 @@
 /* ! Most Loved */
 .MostLoved {
     width: 350px;
+
 }
 
 .MostLoved>.mocktailsList {
     padding: 10% 0%;
+    overflow: hidden;
 }
 
 .MostLoved>.mocktailsList .mocktails {
     display: flex;
     align-items: start;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .MostLoved>.mocktailsList .mocktails>.mocktailsName {
@@ -124,4 +137,30 @@
 
 .MostLoved>.mocktailsList .mocktails>.mocktailsPrice>p {
     font-family: sans-serif;
+}
+
+@media (max-width:800px) {
+    .MenuOuter>.MenuInner {
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+        align-items: center;
+        justify-content: end;
+
+
+
+    }
+}
+
+@media (max-width:513px) {
+
+    .MenuOuter>.MenuleftLeaf > img,
+    .MenurightLeaf > img{
+        width: 250px;
+        z-index: -1;
+        /* background-color: red; */
+
+    }
 }

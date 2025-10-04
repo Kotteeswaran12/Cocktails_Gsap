@@ -15,19 +15,28 @@
 
 
 .outerNav {
-  
+    overflow-x: hidden;
     width: 100vw;
+
 
     background-color: transparent;
     top: 0%;
     background-color: var(--bg);
-    color: var(--text);
+    /* color: var(--text);
+    backdrop-filter: blur(3px); */
+    position: fixed;
+
+    background-color: transparent;
+    z-index: 1;
+    top: 0%;
+    /* position: absolute; */
 }
 
 .outerNav>.innerNav {
     padding: 2% 4%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 
 }
@@ -60,7 +69,35 @@
     letter-spacing: 0.1rem;
 }
 
+.outerNav>.innerNav>.NavRight>ul>li {
+    cursor: pointer;
+}
+
 .outerNav>.innerNav>.NavRight>ul>li:hover {
     opacity: 0.8;
-    cursor: pointer;
+
+}
+
+@media (max-width:800px) {
+    .innerNav {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+
+    }
+}
+
+@media (max-width:472px) {
+    .outerNav>.innerNav {
+        padding: 2% 0%;
+    }
+
+    .outerNav>.innerNav>.NavRight>ul {
+      
+        font-size: 1rem;
+        letter-spacing: 0rem;
+    }
 }
