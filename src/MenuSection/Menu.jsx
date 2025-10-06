@@ -80,7 +80,7 @@ const Menu = () => {
     }, [])
 
     return (
-        <div>
+        <div id='Cocktails'>
             <div className="MenuOuter">
                 <div className="MenuInner">
 

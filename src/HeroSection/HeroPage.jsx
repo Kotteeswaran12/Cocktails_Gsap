@@ -82,8 +82,8 @@ const HeroPage = () => {
                 scrub: 1
             }
         })
-            .to('.HeroleftLeaf', { y: 200 }, 0)
-            .to(".HerorightLeaf", { y: -200 }, 0)
+            .to('.HeroleftLeaf', { y: -300 }, 0)
+            .to(".HerorightLeaf", { y: 300 }, 0)
         const startValue = isMobile ? "top 50%" : "center 60%";
         const endValue = isMobile ? "120% top" : "bottom top";
 

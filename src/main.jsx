@@ -4,6 +4,7 @@ import HeroPage from './HeroSection/HeroPage'
 import Menu from './MenuSection/Menu.jsx'
 import NavBar from './Navigationbar/NavBar.jsx';
 import Review from './ReviewSection/Review.jsx'
+import TheArt  from './TheArtSection/TheArt.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,5 +12,6 @@ createRoot(document.getElementById('root')).render(
     <HeroPage />
     <Menu />
     <Review />
+    <TheArt/>
   </StrictMode>,
 )

@@ -4,34 +4,42 @@
     box-sizing: border-box;
 }
 
+.ReviewOuter {
+    /* margin-bottom: 3rem; */
+}
+
 .ReviewOuter>.ReviewInner {
     padding: 10% 5%;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
 }
-.ReviewOuter>.ReviewInner > .ReviewPart1{
+
+.ReviewOuter>.ReviewInner>.ReviewPart1 {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
-.ReviewOuter>.ReviewInner > .ReviewPart1 >.left {
+
+.ReviewOuter>.ReviewInner>.ReviewPart1>.Reviewleft {
     display: flex;
     gap: 10px;
     flex-direction: column;
     width: 500px;
     padding: 20px 40px;
-    h1{
+
+    h1 {
         font-size: 3rem;
     }
+
     /* background-color: red; */
 
-    button{
+    button {
         width: 100px;
         height: 30px;
         color: black;
-        border-radius:10px;
+        border-radius: 10px;
         outline: none;
         cursor: pointer;
         border: none;
@@ -39,25 +47,28 @@
         font-size: 0.7rem;
     }
 }
-.ReviewOuter>.ReviewInner > .ReviewPart1 >.right {
+
+.ReviewOuter>.ReviewInner>.ReviewPart1>.Reviewright {
     display: flex;
     flex-direction: column;
     width: 500px;
     padding: 10px 40px;
-       .review{
+
+    .review {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         margin-top: 15px;
-       }
+    }
 
-    .review > .stars > h1{
+    .review>.stars>h1 {
         font-family: sans-serif;
     }
+
     /* background-color: red; */
 }
 
-.ReviewOuter>.ReviewInner> .ReviewImgs{
+.ReviewOuter>.ReviewInner>.ReviewImgs {
     display: grid;
     /* width: 1800px;*/
     width: 100%;
@@ -65,18 +76,19 @@
     /* background-color: red; */
     overflow: hidden;
     gap: 15px;
-    grid-template-areas: 
-    "img0 img3 img1"
-    "img2 img2  img4";
+    grid-template-areas:
+        "img0 img3 img1"
+        "img2 img2  img4";
     grid-template-columns: auto;
-    grid-template-rows:auto;
+    grid-template-rows: auto;
     justify-content: center;
     /* align-items: center; */
 
-    img{
+    img {
+        background-image: url("../assets/images/noise.png");
         height: 300px;
         width: 100%;
-       position: block;
-       object-fit: cover;
+        position: block;
+        object-fit: cover;
     }
 }
