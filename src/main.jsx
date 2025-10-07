@@ -6,7 +6,7 @@ import NavBar from './Navigationbar/NavBar.jsx';
 import Review from './ReviewSection/Review.jsx'
 import Cocktail from './CocktailSection/Cocktail.jsx';
 import TheArt  from './TheArtSection/TheArt.jsx';
-
+import Footer from './Footer/Footer.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <NavBar />
@@ -15,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <Review />
     <TheArt/>
     <Cocktail />
+    <Footer/>
   </StrictMode>,
 )

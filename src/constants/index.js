@@ -112,21 +112,24 @@ const openingHours = [
 	{ day: "Sat", time: "9:00am – 2am" },
 	{ day: "Sun", time: "9:00am – 1am" },
 ];
+import insta from '../assets/images/insta.png';
+import x from '../assets/images/x.png';
+import fb from '../assets/images/fb.png';
 
 const socials = [
 	{
 		name: "Instagram",
-		icon: "/images/insta.png",
+		icon: insta,
 		url: "#",
 	},
 	{
 		name: "X (Twitter)",
-		icon: "/images/x.png",
+		icon: x,
 		url: "#",
 	},
 	{
 		name: "Facebook",
-		icon: "/images/fb.png",
+		icon: fb,
 		url: "#",
 	},
 ];

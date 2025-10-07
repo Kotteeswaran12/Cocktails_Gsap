@@ -78,7 +78,7 @@ const Review = () => {
 
     const Abtimg = [abt1, abt2, abt3, abt4, abt5]
     return (
-        <div id='Review'>
+        <div id='AboutUs'>
             <div className="ReviewOuter">
                 <div className="ReviewInner">
                     <div className="ReviewPart1">
