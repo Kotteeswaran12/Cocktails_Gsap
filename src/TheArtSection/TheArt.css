@@ -12,6 +12,7 @@
 .ArtOuter > .ArtInner{
     padding: 0% 5%;
    height: 100%;
+   overflow: hidden;
     .ArtText{
         width: 100%;
         border-radius: 50%;
@@ -62,7 +63,7 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 100%;
-    width: 600px;
+    width: 700px;
 }
 
 .ArtOuter >.ArtInner> .footer{

@@ -1,0 +1,110 @@
+.cocktailOuter {
+    margin-top: 10%;
+    width: 100vw;
+    height:fit-content;
+    position: relative;
+  
+}
+
+.cocktailOuter>.CocktailLeftLeaf,
+.CocktailRightLeaf {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.cocktailOuter>.CocktailLeftLeaf {
+    /* background-color: red; */
+    bottom: 0%;
+}
+
+.cocktailOuter>.CocktailRightLeaf {
+    right: 0%;
+}
+
+.cocktailOuter>.cocktailInner {
+    width: 100%;
+    padding: 0% 5%;
+    /* background-image: radial-gradient(circle, silver);
+    backdrop-filter: blur(80px); */
+    z-index: -1;
+
+    nav {
+        width: 100%;
+        /* background-color: red; */
+
+    }
+}
+
+.cocktailOuter>.cocktailInner>nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    li {
+        font-size: 2.5rem;
+        list-style: none;
+        border-bottom: 1px solid white;
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .display {
+        opacity: 1;
+    }
+}
+
+.cocktailOuter>.cocktailInner>.cocktailMainOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    margin-top: 20px;
+}
+
+.cocktailOuter>.cocktailInner>.cocktailMainOuter>.CocktailMain {
+    width: 1500px;
+    height: 700px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cocktailOuter>.cocktailInner>.cocktailMainOuter>.CocktailMain {
+    .leftArrow {
+        h3 {
+            width: 160px;
+            font-size: 1.5rem;
+        }
+    }
+    
+    .rightArrow {
+        h3 {
+
+            width: 160px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.cocktailOuter>.cocktailInner> .CocktailDetails{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.cocktailOuter>.cocktailInner> .CocktailDetails > .leftDetails , .rightDetails{
+    width: 300px;
+}
+.cocktailOuter>.cocktailInner> .CocktailDetails > .leftDetails > h2{
+    font-size: 2.5rem;
+    color: orange;
+}
